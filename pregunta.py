@@ -49,7 +49,6 @@ def ingest_data():
     for index, element in enumerate (df['principales_palabras_clave']):
         if element[-1] == '.':
             df['principales_palabras_clave'].iloc[index] = element[:-1]
-
         
     return df
 
